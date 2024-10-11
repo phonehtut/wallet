@@ -20,7 +20,7 @@ return new class extends Migration
             $table->string('nrc_front')->unique();
             $table->string('nrc_back')->unique();
             $table->string('nrc_number')->unique();
-            $table->datetime('birth_date');
+            $table->date('birth_date');
             $table->integer('age')->nullable();
             $table->foreignId('work_id')->constrained('works')->cascadeOnDelete();
             $table->text('description')->nullable();
