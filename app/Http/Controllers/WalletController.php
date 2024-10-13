@@ -81,7 +81,9 @@ class WalletController extends Controller
         } catch (\Exception $e) {
             // Rollback the transaction if something fails
             DB::rollBack();
-            return response()->json(['message' => 'Transaction failed. Please try again.', 'error' => $e->getMessage()], 500);
+            return response()->json([
+                'message' => 'Transaction failed. Please try again.',
+                'error' => $e->getMessage()], 500);
         }
     }
 }

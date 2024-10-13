@@ -1,7 +1,7 @@
 {
-    "name": "laravel/laravel",
+    "name": "phonehtut-api/wallet",
     "type": "project",
-    "description": "The skeleton application for the Laravel framework.",
+    "description": "This is a wallet api",
     "keywords": ["laravel", "framework"],
     "license": "MIT",
     "require": {
